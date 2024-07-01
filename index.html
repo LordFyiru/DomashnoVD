@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мојот Вебсајт</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+
+        header {
+            background-color: darkslategray;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .section {
+            display: none;
+            padding: 2rem;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: darkslategray;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .map-container {
+            text-align: center;
+        }
+
+        .map-container iframe {
+            border: 0;
+            width: 100%;
+            max-width: 600px;
+            height: 450px;
+            margin-bottom: 1rem;
+        }
+
+        .map-container p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        .img {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Добредојдовте на мојот вебсајт</h1>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('biography')">Биографија</a></li>
+            <li><a href="#" onclick="showSection('hobbies')">Хобија</a></li>
+            <li><a href="#" onclick="showSection('education')">Образование</a></li>
+            <li><a href="#" onclick="showSection('contact')">Контакт</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="biography" class="section active">
+        <h2>Биографија</h2>
+        <p>Јас сум Леонтин Илијевски, студент, бруцош на Факултетот за информатички науки и компјутерско инженерство (ФИНКИ), кое е дел од Св. Климент Охридски универзитет во Скопје. Моите академски интереси се фокусирани врз софтверсркото инжињерство. За време на моето образование, имав можност да учествувам во различни проекти и активности што ми овозможија да напреднам моите вештини во програмирањето.
+
+            Извон академските обврски, уживам во разнообразни хобија кои се наброени во наредната секција. Сметам дека хобијата не само што ни обезбедуваат релаксација и забава, туку и можат да бидат извор на инспирација и креативност во мојата академска и професионална кариера.</p>
+    </section>
+
+    <section id="hobbies" class="section">
+        <h2>Хобија</h2>
+        <p>Покрај академските обврски, секогаш се трудам да најдам време за хобија и активности кои ме исполнуваат и ме прават среќен. Некои од моите хобија вклучуваат:</p>
+        <ul>
+            <li>Играње видео игри: Обожавам да играм различни видео игри и да се натпреварувам со пријателите. Ова ме релаксира и ми помага да се ослободам од стресот.
+                <br><img src="../domashno1/images/image1.png" style="width:200px;height:auto;">
+            </li>
+            <li>Кошарка: Кошарката е мојот омилен спорт. Сакам да играм кошарка во слободно време и да се дружам со пријателите на теренот.
+                <br><img src="../domashno1/images/image2.png" style="width:200px;height:auto;">
+            </li>
+            <li>Колекционирање пари од целиот свет: Имам страст за собирање различни монети и банкноти од целиот свет. Ова ми дава можност да учам за различни култури и историја.
+                <br><img src="../domashno1/images/image3.png" style="width:200px;height:auto;">
+            </li>
+        </ul>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Образование</h2>
+        <p> Основното образование го завршив во училиштето „Кочо Рацин“, каде што за прв пат се запознав со светот на знаењето и образованието.
+
+            По завршувањето на основното образование, продолжив во гимназијата „Гоце Делчев“. Таму го проширив моето знаење и се развив како личност. Во текот на средното образование, учествував во многу натпревари и активности, кои ми помогнаа да ги развијам моите способности и интереси.
+
+            Моментално сум студент на Факултетот за информатички науки и компјутерско инженерство (ФИНКИ). Тука се фокусирам на стекнување на длабоко знаење во областа на информатичките технологии и компјутерските науки. Моите студии на ФИНКИ ми овозможуваат да ги развијам моите технички вештини и да се подготвам за идни предизвици во кариерата.</p>
+        <div class="map-container">
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.940126649918!2d21.429421115289277!3d41.99850927921233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415f402a1da7f%3A0x8f8d1d1b9b0e3964!2sFINKI%20Faculty%20of%20Computer%20Science%20and%20Engineering!5e0!3m2!1sen!2smk!4v1622460188723!5m2!1sen!2smk"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"></iframe>
+            <p>Мојот универзитет: Факултет за информатички науки и компјутерско инженерство (ФИНКИ)</p>
+        </div></section>
+
+    <section id="contact" class="section">
+        <h2>Контакт</h2>
+        <p>Можете да ме контактирате преку: </br> leontinilijevski1@gmail.com </br> 070241990</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Леонтин Илијевски (231222). Сите права се задржани.</p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            if (section.id === sectionId) {
+                section.classList.add('active');
+            } else {
+                section.classList.remove('active');
+            }
+        });
+    }
+</script>
+</body>
+</html>
